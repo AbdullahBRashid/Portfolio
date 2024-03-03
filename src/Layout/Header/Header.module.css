@@ -1,0 +1,32 @@
+header {
+    outline: 1px solid black;
+
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 5vw;
+
+    background-color: transparent;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 100px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+#logo-div {
+    display: flex;
+    align-items: center;
+}
+
+#links-list {
+    display: flex;
+    list-style: none;
+}
