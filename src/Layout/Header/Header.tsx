@@ -1,20 +1,23 @@
-import "./Header.module.css"
+import { Link } from "react-router-dom";
+
+import styles from "./Header.module.css"
 
 const Header = () => {
+
 
     return (
     <>
         <header>
-            <div id="logo-div">
+            <div id={styles['logo-div']}>
                 <img src="/logo.svg" alt="Logo" />
-                <h1>AbdullahBRashid</h1>
+                <h2>AbdullahBRashid</h2>
             </div>
 
             <div id="">
                 <ul id="links-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/work">Work</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/work">Work</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </header>
