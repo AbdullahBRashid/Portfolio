@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import styles from "./Header.module.css"
+import './Header.css'
 
 const Header = () => {
 
@@ -8,7 +8,7 @@ const Header = () => {
     return (
     <>
         <header>
-            <div id={styles['logo-div']}>
+            <div id="logo-div">
                 <img src="/logo.svg" alt="Logo" />
                 <h2>AbdullahBRashid</h2>
             </div>

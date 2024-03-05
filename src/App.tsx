@@ -12,20 +12,20 @@ function App() {
 
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Header />
 
-      <main>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route  element={<E404/>} />
-          </Routes>
-        </BrowserRouter>
-      </main>
+        <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route  element={<E404/>} />
+            </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
